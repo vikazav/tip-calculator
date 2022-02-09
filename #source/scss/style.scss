@@ -1,0 +1,226 @@
+*,
+*,
+*::before,
+*::after {
+   padding: 0;
+   margin: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+
+a {
+   text-decoration: none;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+$StrongCyan:hsl(172, 67%, 45%);
+$Very-darkCyan: hsl(183, 100%, 15%);
+$Dark-grayishCyan: hsl(186, 14%, 43%);
+$Dark-grayishCyan1: hsl(184, 14%, 56%);
+$Light-grayishCyan: hsl(185, 41%, 84%);
+$Light-grayishCyan1: hsl(189, 41%, 97%);
+
+html,
+body {
+   height: 100%;
+   line-height: 1;
+   font-size: 24px;
+   font-family: 'Space Mono', monospace;
+   color: $Dark-grayishCyan1;
+   background-color: $Light-grayishCyan;
+   font-weight: 700;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.block {
+   background-color: #fff;
+   padding: 50px;
+   max-width: 920px;
+   border-radius: 20px;
+   display: flex;
+   margin: 0 -50px 20px -50px;
+}
+
+.column {
+   display: flex;
+   flex-direction: column;
+   flex: 0 1 50%;
+   padding: 0 50px 0 0;
+
+   &_b {
+      background-color: $Very-darkCyan;
+      padding: 60px 50px 40px 50px;
+      border-radius: 20px;
+   }
+}
+
+.form {
+
+   &_bill {}
+
+   &__title {
+      color: $Dark-grayishCyan;
+      margin-bottom: 10px;
+      font-size: 18px;
+   }
+
+   &__number {}
+}
+
+.input {
+   display: flex;
+   align-items: center;
+   color: $Very-darkCyan;
+   background-color: $Light-grayishCyan1;
+   margin-bottom: 45px;
+   height: 45px;
+   width: 100%;
+   border-radius: 5px;
+   font-size: 24px;
+   font-weight: 700;
+   padding: 0 15px;
+
+   &_b {
+      background: url("/images/icon-dollar.svg") $Light-grayishCyan1 left 15px center no-repeat;
+   }
+
+   &_p {
+      background: url("/images/icon-person.svg") $Light-grayishCyan1 left 15px center no-repeat;
+   }
+}
+
+.input:hover,
+.select__tip-item_c:hover {
+   border: $StrongCyan 3px solid;
+   color: $Very-darkCyan;
+   background-color: $Light-grayishCyan1;
+}
+
+.select {
+   margin-bottom: 45px;
+}
+
+.select__tip {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   text-align: center;
+
+   &-item {
+      background-color: $Very-darkCyan;
+      color: #fff;
+      padding: 20px 40px;
+      margin: 0px 12px 12px 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 117px;
+      height: 50px;
+      padding: 0 15px;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      outline: 0;
+
+      &_c {
+         background-color: $Light-grayishCyan1;
+         color: $Very-darkCyan;
+         font-size: 22px;
+         font-weight: 700;
+      }
+
+      &:hover:not(:last-child) {
+         color: $Very-darkCyan;
+         background-color: $Light-grayishCyan;
+      }
+   }
+}
+
+.result {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 60px;
+
+   &__title {
+      position: relative;
+      flex: 0 1 50%;
+      color: #fff;
+      font-size: 16px;
+      text-transform: capitalize;
+
+      span {
+         position: absolute;
+         font-size: 14px;
+         text-transform: none;
+         color: $Dark-grayishCyan;
+         left: 5px;
+         bottom: -5px;
+      }
+   }
+
+   &__number {
+      font-size: 35px;
+      color: $StrongCyan;
+   }
+}
+
+.reset {
+   background-color: #02565a;
+   color: $Very-darkCyan;
+   padding: 17px;
+   display: block;
+   width: 100%;
+   text-transform: uppercase;
+   border-radius: 5px;
+   margin-top: 80px;
+   font-weight: 700;
+
+   &:hover {
+      background-color: $Light-grayishCyan;
+      color: $Very-darkCyan;
+   }
+}
+
+.attribution {
+   font-size: 11px;
+   text-align: center;
+}
+
+.attribution a {
+   color: hsl(228, 45%, 44%);
+}
+
+.active {
+   color: $Very-darkCyan;
+   background-color: $Light-grayishCyan;
+}
+
+.form__title {}
+
+.zero {
+   color: rgb(189, 81, 49);
+   position: absolute;
+   right: 0;
+   top: 0px;
+   font-size: 18px;
+}
+
+.input::placeholder {
+   color: $Dark-grayishCyan1;
+   text-align: end;
+   font-family: 'Space Mono', monospace;
+}
+
+.input:focus {
+   background-image: none;
+}
+
+.form__input {
+   display: flex;
+   flex-direction: column;
+   position: relative;
+}
