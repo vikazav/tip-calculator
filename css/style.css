@@ -38,6 +38,14 @@ body {
           flex-direction: column;
 }
 
+.header {
+  margin-bottom: 85px;
+  text-transform: uppercase;
+  color: #406667;
+  line-height: 1.5;
+  letter-spacing: 10px;
+}
+
 .block {
   background-color: #fff;
   padding: 50px;
@@ -73,6 +81,7 @@ body {
   margin-bottom: 10px;
   font-size: 18px;
 }
+
 .input {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -89,6 +98,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   padding: 0 15px;
+  text-align: right;
 }
 .input_b {
   background: url("/images/icon-dollar.svg") #f4fafa left 15px center no-repeat;
@@ -149,7 +159,7 @@ body {
 }
 .select__tip-item:hover:not(:last-child) {
   color: #00494d;
-  background-color: #c5e4e7;
+  background-color: #26c0ab;
 }
 
 .result {
@@ -192,10 +202,10 @@ body {
   text-transform: uppercase;
   border-radius: 5px;
   margin-top: 80px;
-  font-weight: 700;
+  font-weight: 900;
 }
 .reset:hover {
-  background-color: #c5e4e7;
+  background-color: #26c0ab;
   color: #00494d;
 }
 
@@ -219,40 +229,6 @@ body {
   right: 0;
   top: 0px;
   font-size: 18px;
-}
-
-.input::-webkit-input-placeholder {
-  color: #7f9c9f;
-  text-align: end;
-  font-family: "Space Mono", monospace;
-}
-
-.input::-moz-placeholder {
-  color: #7f9c9f;
-  text-align: end;
-  font-family: "Space Mono", monospace;
-}
-
-.input:-ms-input-placeholder {
-  color: #7f9c9f;
-  text-align: end;
-  font-family: "Space Mono", monospace;
-}
-
-.input::-ms-input-placeholder {
-  color: #7f9c9f;
-  text-align: end;
-  font-family: "Space Mono", monospace;
-}
-
-.input::placeholder {
-  color: #7f9c9f;
-  text-align: end;
-  font-family: "Space Mono", monospace;
-}
-
-.input:focus {
-  background-image: none;
 }
 
 .form__input {

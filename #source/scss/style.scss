@@ -36,6 +36,14 @@ body {
    flex-direction: column;
 }
 
+.header {
+   margin-bottom: 85px;
+   text-transform: uppercase;
+   color: #406667;
+   line-height: 1.5;
+   letter-spacing: 10px;
+}
+
 .block {
    background-color: #fff;
    padding: 50px;
@@ -59,16 +67,11 @@ body {
 }
 
 .form {
-
-   &_bill {}
-
    &__title {
       color: $Dark-grayishCyan;
       margin-bottom: 10px;
       font-size: 18px;
    }
-
-   &__number {}
 }
 
 .input {
@@ -83,6 +86,7 @@ body {
    font-size: 24px;
    font-weight: 700;
    padding: 0 15px;
+   text-align: right;
 
    &_b {
       background: url("/images/icon-dollar.svg") $Light-grayishCyan1 left 15px center no-repeat;
@@ -135,7 +139,7 @@ body {
 
       &:hover:not(:last-child) {
          color: $Very-darkCyan;
-         background-color: $Light-grayishCyan;
+         background-color: $StrongCyan;
       }
    }
 }
@@ -177,10 +181,10 @@ body {
    text-transform: uppercase;
    border-radius: 5px;
    margin-top: 80px;
-   font-weight: 700;
+   font-weight: 900;
 
    &:hover {
-      background-color: $Light-grayishCyan;
+      background-color: $StrongCyan;
       color: $Very-darkCyan;
    }
 }
@@ -199,24 +203,12 @@ body {
    background-color: $Light-grayishCyan;
 }
 
-.form__title {}
-
 .zero {
    color: rgb(189, 81, 49);
    position: absolute;
    right: 0;
    top: 0px;
    font-size: 18px;
-}
-
-.input::placeholder {
-   color: $Dark-grayishCyan1;
-   text-align: end;
-   font-family: 'Space Mono', monospace;
-}
-
-.input:focus {
-   background-image: none;
 }
 
 .form__input {
