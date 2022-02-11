@@ -15,14 +15,14 @@ function calc () {
       return;
     }
 if (tip > 0) {
-   tipPerPerson = Math.floor((bill*tip/100/people)*100)/100;
+   tipPerPerson =+ (bill*tip/100/people);
 } else {
-  tipPerPerson = Math.floor((bill*custom/100/people)*100)/100;
+  tipPerPerson = + (bill*custom/100/people);
 }
     
-    tipTotal = Math.floor((bill/people+tipPerPerson)*100)/100;
-       resultTip.textContent = tipPerPerson;
-       resultTotal.textContent = tipTotal;
+    tipTotal = + (bill/people+tipPerPerson);
+       resultTip.textContent = "$"+tipPerPerson.toFixed(2);
+       resultTotal.textContent ="$"+tipTotal.toFixed(2);
     
 }
 calc();
@@ -57,8 +57,9 @@ zeroError.classList.add('zero');
 zeroError.innerText="Can't be zero";
 
      } else  { 
-        input.style.border = 'none';
+      //   input.style.border = 'none';
         zeroError.remove();
+        input.classList.add('active-input');
         
          switch(input.getAttribute('id')) {
             case "bill":
@@ -75,7 +76,6 @@ zeroError.innerText="Can't be zero";
                people = +input.value;
                break;
             }
-            console.log(bill, custom, people, tip);
       }
    calc();
      

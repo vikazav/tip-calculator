@@ -36,32 +36,37 @@ body {
    flex-direction: column;
 }
 
+.wrapper {
+
+   width: 100%;
+}
+
 .header {
    margin-bottom: 85px;
    text-transform: uppercase;
    color: #406667;
    line-height: 1.5;
    letter-spacing: 10px;
+   text-align: center;
 }
 
 .block {
    background-color: #fff;
-   padding: 50px;
+   padding: 30px 30px 30px 50px;
    max-width: 920px;
    border-radius: 20px;
-   display: flex;
-   margin: 0 -50px 20px -50px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-gap: 45px;
+   margin: 0 auto;
+   margin-bottom: 10px;
 }
 
 .column {
-   display: flex;
-   flex-direction: column;
-   flex: 0 1 50%;
-   padding: 0 50px 0 0;
 
    &_b {
       background-color: $Very-darkCyan;
-      padding: 60px 50px 40px 50px;
+      padding: 50px 40px 40px 40px;
       border-radius: 20px;
    }
 }
@@ -104,21 +109,20 @@ body {
    background-color: $Light-grayishCyan1;
 }
 
-.select {
-   margin-bottom: 45px;
-}
+.select {}
 
 .select__tip {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   text-align: center;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   justify-content: space-between;
+   grid-gap: 12px;
+
 
    &-item {
       background-color: $Very-darkCyan;
       color: #fff;
       padding: 20px 40px;
-      margin: 0px 12px 12px 0px;
+      // margin: 0px 12px 12px 0px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -127,8 +131,6 @@ body {
       padding: 0 15px;
       border-radius: 5px;
       text-align: center;
-      cursor: pointer;
-      outline: 0;
 
       &_c {
          background-color: $Light-grayishCyan1;
@@ -145,16 +147,19 @@ body {
 }
 
 .result {
-   display: flex;
-   justify-content: space-between;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   // display: flex;
+   // justify-content: space-between;
    margin-bottom: 60px;
 
    &__title {
       position: relative;
-      flex: 0 1 50%;
+      // flex: 0 1 50%;
       color: #fff;
       font-size: 16px;
       text-transform: capitalize;
+      margin-bottom: 80px;
 
       span {
          position: absolute;
@@ -162,11 +167,12 @@ body {
          text-transform: none;
          color: $Dark-grayishCyan;
          left: 5px;
-         bottom: -5px;
+         bottom: -20px;
       }
    }
 
    &__number {
+      text-align: right;
       font-size: 35px;
       color: $StrongCyan;
    }
@@ -181,7 +187,8 @@ body {
    text-transform: uppercase;
    border-radius: 5px;
    margin-top: 80px;
-   font-weight: 900;
+   font-weight: 700;
+   font-size: 22px;
 
    &:hover {
       background-color: $StrongCyan;
@@ -200,7 +207,13 @@ body {
 
 .active {
    color: $Very-darkCyan;
-   background-color: $Light-grayishCyan;
+   background-color: $StrongCyan;
+}
+
+.active-input {
+   border: $StrongCyan 3px solid;
+   color: $Very-darkCyan;
+   background-color: $Light-grayishCyan1;
 }
 
 .zero {
