@@ -25,7 +25,7 @@ html,
 body {
    height: 100%;
    line-height: 1;
-   font-size: 24px;
+   font-size: 1.67vh;
    font-family: 'Space Mono', monospace;
    color: $Dark-grayishCyan1;
    background-color: $Light-grayishCyan;
@@ -75,7 +75,7 @@ body {
    &__title {
       color: $Dark-grayishCyan;
       margin-bottom: 10px;
-      font-size: 18px;
+      font-size: 1.5rem;
    }
 }
 
@@ -88,8 +88,7 @@ body {
    height: 45px;
    width: 100%;
    border-radius: 5px;
-   font-size: 24px;
-   font-weight: 700;
+   font-size: 1.75rem;
    padding: 0 15px;
    text-align: right;
 
@@ -122,7 +121,7 @@ body {
       background-color: $Very-darkCyan;
       color: #fff;
       padding: 20px 40px;
-      // margin: 0px 12px 12px 0px;
+      font-size: 1.75rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -135,8 +134,7 @@ body {
       &_c {
          background-color: $Light-grayishCyan1;
          color: $Very-darkCyan;
-         font-size: 22px;
-         font-weight: 700;
+         font-size: 1.75rem;
       }
 
       &:hover:not(:last-child) {
@@ -149,21 +147,18 @@ body {
 .result {
    display: grid;
    grid-template-columns: 1fr 1fr;
-   // display: flex;
-   // justify-content: space-between;
    margin-bottom: 60px;
 
    &__title {
       position: relative;
-      // flex: 0 1 50%;
       color: #fff;
-      font-size: 16px;
       text-transform: capitalize;
       margin-bottom: 80px;
+      font-size: 1.5rem;
 
       span {
          position: absolute;
-         font-size: 14px;
+         font-size: 0.875rem;
          text-transform: none;
          color: $Dark-grayishCyan;
          left: 5px;
@@ -173,7 +168,7 @@ body {
 
    &__number {
       text-align: right;
-      font-size: 35px;
+      font-size: 2.5rem;
       color: $StrongCyan;
    }
 }
@@ -181,14 +176,15 @@ body {
 .reset {
    background-color: #02565a;
    color: $Very-darkCyan;
-   padding: 17px;
+   padding: 10px;
    display: block;
    width: 100%;
    text-transform: uppercase;
    border-radius: 5px;
    margin-top: 80px;
    font-weight: 700;
-   font-size: 22px;
+   font-size: 1.375rem;
+   font-stretch: condensed;
 
    &:hover {
       background-color: $StrongCyan;
@@ -221,7 +217,6 @@ body {
    position: absolute;
    right: 0;
    top: 0px;
-   font-size: 18px;
 }
 
 .form__input {
