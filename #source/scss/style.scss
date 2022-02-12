@@ -21,11 +21,18 @@ $Dark-grayishCyan1: hsl(184, 14%, 56%);
 $Light-grayishCyan: hsl(185, 41%, 84%);
 $Light-grayishCyan1: hsl(189, 41%, 97%);
 
-html,
+
+html {
+   font-size: 1.67vw;
+}
+
+
 body {
-   height: 100%;
+   width: 100vw;
+   height: 100vh;
    line-height: 1;
-   font-size: 1.67vh;
+   // font-size: 1.67vw;
+   font-size: 24px;
    font-family: 'Space Mono', monospace;
    color: $Dark-grayishCyan1;
    background-color: $Light-grayishCyan;
@@ -75,7 +82,7 @@ body {
    &__title {
       color: $Dark-grayishCyan;
       margin-bottom: 10px;
-      font-size: 1.5rem;
+      font-size: 0.75rem;
    }
 }
 
@@ -88,7 +95,7 @@ body {
    height: 45px;
    width: 100%;
    border-radius: 5px;
-   font-size: 1.75rem;
+   font-size: 1.0rem;
    padding: 0 15px;
    text-align: right;
 
@@ -121,7 +128,6 @@ body {
       background-color: $Very-darkCyan;
       color: #fff;
       padding: 20px 40px;
-      font-size: 1.75rem;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -134,7 +140,8 @@ body {
       &_c {
          background-color: $Light-grayishCyan1;
          color: $Very-darkCyan;
-         font-size: 1.75rem;
+         font-size: 0.83rem;
+         font-weight: 700;
       }
 
       &:hover:not(:last-child) {
@@ -154,11 +161,11 @@ body {
       color: #fff;
       text-transform: capitalize;
       margin-bottom: 80px;
-      font-size: 1.5rem;
+      font-size: 0.75rem;
 
       span {
          position: absolute;
-         font-size: 0.875rem;
+         font-size: 0.667rem;
          text-transform: none;
          color: $Dark-grayishCyan;
          left: 5px;
@@ -168,7 +175,7 @@ body {
 
    &__number {
       text-align: right;
-      font-size: 2.5rem;
+      font-size: 1.5rem;
       color: $StrongCyan;
    }
 }
@@ -183,7 +190,7 @@ body {
    border-radius: 5px;
    margin-top: 80px;
    font-weight: 700;
-   font-size: 1.375rem;
+   font-size: 0.75rem;
    font-stretch: condensed;
 
    &:hover {
@@ -223,4 +230,10 @@ body {
    display: flex;
    flex-direction: column;
    position: relative;
+}
+
+@media (max-width:900px) {
+   html {
+      font-size: 2.67vw;
+   }
 }
