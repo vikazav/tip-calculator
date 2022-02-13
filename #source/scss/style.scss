@@ -31,7 +31,6 @@ body {
    width: 100vw;
    height: 100vh;
    line-height: 1;
-   // font-size: 1.67vw;
    font-size: 24px;
    font-family: 'Space Mono', monospace;
    color: $Dark-grayishCyan1;
@@ -44,7 +43,7 @@ body {
 }
 
 .wrapper {
-
+   margin: 0 auto;
    width: 100%;
 }
 
@@ -55,6 +54,10 @@ body {
    line-height: 1.5;
    letter-spacing: 10px;
    text-align: center;
+
+   img {
+      height: 100%;
+   }
 }
 
 .block {
@@ -93,7 +96,7 @@ body {
    background-color: $Light-grayishCyan1;
    margin-bottom: 45px;
    height: 45px;
-   width: 100%;
+   // width: 100%;
    border-radius: 5px;
    font-size: 1.0rem;
    padding: 0 15px;
@@ -131,7 +134,8 @@ body {
       display: flex;
       align-items: center;
       justify-content: center;
-      width: 117px;
+      width: 100%;
+      // max-width: 117px;
       height: 50px;
       padding: 0 15px;
       border-radius: 5px;
@@ -232,8 +236,46 @@ body {
    position: relative;
 }
 
-@media (max-width:900px) {
+@media (max-width: 1200px) {
    html {
-      font-size: 2.67vw;
+      font-size: 2.00vw;
+   }
+
+   .wrapper {
+      width: 83%;
+   }
+}
+
+@media (max-width: 1160px) {
+   html {
+      font-size: 2.06vw;
+   }
+
+   .wrapper {
+      width: 85%;
+   }
+
+   .block {
+      max-width: 800px;
+   }
+}
+
+@media (max-width: 1020px) {
+   html {
+      font-size: 2.35vw;
+   }
+
+   .block {
+      display: block;
+      max-width: 375x;
+      // padding: 40px 30px 30px 30px;
+   }
+
+   // .wrapper {
+   //    width: 85%;
+   // }
+
+   .header {
+      margin-bottom: 0px;
    }
 }
