@@ -24,12 +24,14 @@ $Light-grayishCyan1: hsl(189, 41%, 97%);
 
 html {
    font-size: 1.67vw;
+   height: 100vh;
 }
 
 
 body {
+
    width: 100vw;
-   height: 100vh;
+   height: 100%;
    line-height: 1;
    font-size: 24px;
    font-family: 'Space Mono', monospace;
@@ -42,22 +44,12 @@ body {
    flex-direction: column;
 }
 
-.wrapper {
-   margin: 0 auto;
-   width: 100%;
-}
-
-.header {
-   margin-bottom: 85px;
-   text-transform: uppercase;
-   color: #406667;
-   line-height: 1.5;
-   letter-spacing: 10px;
+.logo {
+   display: flex;
+   justify-content: center;
    text-align: center;
-
-   img {
-      height: 100%;
-   }
+   margin-bottom: 40px;
+   padding-top: 40px;
 }
 
 .block {
@@ -82,6 +74,10 @@ body {
 }
 
 .form {
+   &__input {
+      margin-bottom: 45px;
+   }
+
    &__title {
       color: $Dark-grayishCyan;
       margin-bottom: 10px;
@@ -94,7 +90,6 @@ body {
    align-items: center;
    color: $Very-darkCyan;
    background-color: $Light-grayishCyan1;
-   margin-bottom: 45px;
    height: 45px;
    // width: 100%;
    border-radius: 5px;
@@ -118,7 +113,9 @@ body {
    background-color: $Light-grayishCyan1;
 }
 
-.select {}
+.select {
+   margin-bottom: 45px;
+}
 
 .select__tip {
    display: grid;
@@ -126,11 +123,10 @@ body {
    justify-content: space-between;
    grid-gap: 12px;
 
-
    &-item {
       background-color: $Very-darkCyan;
       color: #fff;
-      padding: 20px 40px;
+      // padding: 20px 40px;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -140,6 +136,7 @@ body {
       padding: 0 15px;
       border-radius: 5px;
       text-align: center;
+      font-size: 1.08rem;
 
       &_c {
          background-color: $Light-grayishCyan1;
@@ -187,7 +184,7 @@ body {
 .reset {
    background-color: #02565a;
    color: $Very-darkCyan;
-   padding: 10px;
+   padding: 15px;
    display: block;
    width: 100%;
    text-transform: uppercase;
@@ -241,9 +238,6 @@ body {
       font-size: 2.00vw;
    }
 
-   .wrapper {
-      width: 83%;
-   }
 }
 
 @media (max-width: 1160px) {
@@ -251,31 +245,129 @@ body {
       font-size: 2.06vw;
    }
 
-   .wrapper {
-      width: 85%;
-   }
-
    .block {
-      max-width: 800px;
+      max-width: 850px;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
    }
 }
 
-@media (max-width: 1020px) {
+@media (max-width: 1024px) {
    html {
       font-size: 2.35vw;
    }
 
    .block {
       display: block;
-      max-width: 375x;
-      // padding: 40px 30px 30px 30px;
+      max-width: 650px;
+      padding: 40px 60px 40px 60px;
+
    }
 
-   // .wrapper {
-   //    width: 85%;
-   // }
-
    .header {
+      margin-bottom: 15px;
+   }
+
+   .result {
       margin-bottom: 0px;
+
+      &__title {
+         margin-bottom: 55px;
+      }
+   }
+
+   .reset {
+      margin-top: 0;
+   }
+
+   .form {
+      &__input {
+         margin-bottom: 20px;
+      }
+   }
+
+   .select {
+      margin-bottom: 40px;
+   }
+
+   .column_b {
+      padding: 50px 25px 25px 25px;
+   }
+
+   .attribution {
+      display: none;
+   }
+
+}
+
+@media (max-width: 767px) {
+   html {
+      font-size: 3.13vw;
+   }
+
+   .block {
+      max-width: 520px;
+      padding: 40px 30px 30px 30px;
+      margin-bottom: 0;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+   }
+}
+
+@media (max-width: 550px) {
+   html {
+      font-size: 4.36vw;
+   }
+
+   .logo img {
+      width: 10%;
+   }
+
+   .select__tip {
+      grid-template-columns: 1fr 1fr;
+   }
+
+   .block {
+      max-width: 375px;
+      padding: 20px 15px 15px 15px;
+   }
+
+   .form {
+      &__input {
+         margin-bottom: 15px;
+      }
+   }
+
+   .logo {
+      margin-bottom: 0px;
+      padding-top: 10px;
+      height: 50%;
+   }
+
+   .select {
+      margin-bottom: 15px;
+   }
+
+   .result {
+
+      margin-bottom: 15px;
+
+      &__title {
+         margin-bottom: 40px;
+      }
+   }
+
+   .column_b {
+
+      padding: 25px 40px 20px 40px;
+
+   }
+}
+
+@media (max-width: 375px) {
+   html {
+      font-size: 5.2vw;
    }
 }
