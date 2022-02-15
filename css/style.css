@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
 *,
 *,
 *::before,
@@ -7,7 +8,7 @@
   margin: 0;
   border: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -15,7 +16,7 @@ a {
 }
 
 html {
-  font-size: 1.67vw;
+  font-size: 1.52vw;
   height: 100vh;
 }
 
@@ -23,7 +24,7 @@ body {
   width: 100vw;
   height: 100%;
   line-height: 1;
-  font-size: 24px;
+  font-size: 22px;
   font-family: "Space Mono", monospace;
   color: #7f9c9f;
   background-color: #c5e4e7;
@@ -32,15 +33,15 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .logo {
@@ -48,8 +49,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-align: center;
   margin-bottom: 40px;
   padding-top: 40px;
@@ -78,6 +79,7 @@ body {
 .form__input {
   margin-bottom: 45px;
 }
+
 .form__title {
   color: #5e7a7d;
   margin-bottom: 10px;
@@ -89,8 +91,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #00494d;
   background-color: #f4fafa;
   height: 45px;
@@ -99,9 +101,11 @@ body {
   padding: 0 15px;
   text-align: right;
 }
+
 .input_b {
   background: url("/images/icon-dollar.svg") #f4fafa left 15px center no-repeat;
 }
+
 .input_p {
   background: url("/images/icon-person.svg") #f4fafa left 15px center no-repeat;
 }
@@ -123,10 +127,11 @@ body {
   -ms-grid-columns: 1fr 12px 1fr 12px 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   grid-gap: 12px;
 }
+
 .select__tip-item {
   background-color: #00494d;
   color: #fff;
@@ -134,11 +139,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 100%;
   height: 50px;
   padding: 0 15px;
@@ -146,12 +151,14 @@ body {
   text-align: center;
   font-size: 1.08rem;
 }
+
 .select__tip-item_c {
   background-color: #f4fafa;
   color: #00494d;
   font-size: 0.83rem;
   font-weight: 700;
 }
+
 .select__tip-item:hover:not(:last-child) {
   color: #00494d;
   background-color: #26c0ab;
@@ -164,6 +171,7 @@ body {
   grid-template-columns: 1fr 1fr;
   margin-bottom: 60px;
 }
+
 .result__title {
   position: relative;
   color: #fff;
@@ -171,14 +179,16 @@ body {
   margin-bottom: 80px;
   font-size: 0.75rem;
 }
+
 .result__title span {
   position: absolute;
   font-size: 0.667rem;
   text-transform: none;
   color: #5e7a7d;
   left: 5px;
-  bottom: -20px;
+  bottom: -30px;
 }
+
 .result__number {
   text-align: right;
   font-size: 1.5rem;
@@ -198,6 +208,7 @@ body {
   font-size: 0.75rem;
   font-stretch: condensed;
 }
+
 .reset:hover {
   background-color: #26c0ab;
   color: #00494d;
@@ -236,8 +247,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   position: relative;
 }
 
@@ -246,6 +257,7 @@ body {
     font-size: 2vw;
   }
 }
+
 @media (max-width: 1160px) {
   html {
     font-size: 2.06vw;
@@ -259,6 +271,7 @@ body {
     border-bottom-right-radius: 0px;
   }
 }
+
 @media (max-width: 1024px) {
   html {
     font-size: 2.35vw;
@@ -277,6 +290,7 @@ body {
   .result {
     margin-bottom: 0px;
   }
+
   .result__title {
     margin-bottom: 55px;
   }
@@ -301,6 +315,7 @@ body {
     display: none;
   }
 }
+
 @media (max-width: 767px) {
   html {
     font-size: 3.13vw;
@@ -314,6 +329,7 @@ body {
     border-top-right-radius: 20px;
   }
 }
+
 @media (max-width: 550px) {
   html {
     font-size: 4.36vw;
@@ -350,6 +366,7 @@ body {
   .result {
     margin-bottom: 15px;
   }
+
   .result__title {
     margin-bottom: 40px;
   }
@@ -358,6 +375,7 @@ body {
     padding: 25px 40px 20px 40px;
   }
 }
+
 @media (max-width: 375px) {
   html {
     font-size: 5.2vw;
