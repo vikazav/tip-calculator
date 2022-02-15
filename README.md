@@ -1,4 +1,4 @@
-# Frontend Mentor - Tip calculator app solution
+# Tip calculator app solution
 
 This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). 
 
@@ -21,7 +21,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/vikazav/tip-calculator]
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://vikazav.github.io/tip-calculator/]
 
 ## My process
 
@@ -31,7 +31,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - CSS Grid
-
 
 
 
